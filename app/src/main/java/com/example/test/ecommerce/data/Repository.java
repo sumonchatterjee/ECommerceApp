@@ -48,8 +48,8 @@ public class Repository implements RepositoryDataSource {
     private void getCategoriesFromRemoteDataSource(final IDataSource.LoadDataCallback<MainResponse> callback) {
         remoteDataSource.getCategories(new IDataSource.LoadDataCallback<MainResponse>() {
             @Override
-            public void onDataLoaded(List<Categories> list, List<Rankings> list1) {
-                callback.onDataLoaded(list,list1);
+            public void onDataLoaded(List<Categories> categoriesList, List<Rankings> rankingsList) {
+                callback.onDataLoaded(categoriesList, rankingsList);
             }
 
             @Override

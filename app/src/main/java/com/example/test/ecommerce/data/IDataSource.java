@@ -9,7 +9,7 @@ public interface IDataSource {
 
     interface LoadDataCallback<T> {
 
-        void onDataLoaded(List<Categories> list,List<Rankings> list1);
+        void onDataLoaded(List<Categories> categoriesList,List<Rankings> rankingsList);
 
         void onDataNotAvailable();
     }

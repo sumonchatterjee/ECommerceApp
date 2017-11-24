@@ -64,6 +64,7 @@ public class CategoryActivity extends AppCompatActivity implements CategoriesCon
 
     }
 
+
     @Override
     public void showDetailData(@NonNull List<Categories> sources, @NonNull List<Rankings> ranking) {
       if(sources!=null){
